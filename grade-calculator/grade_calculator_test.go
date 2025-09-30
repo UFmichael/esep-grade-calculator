@@ -265,7 +265,7 @@ func TestGetGradePass(t *testing.T) {
 }
 
 func TestGetGradeFail(t *testing.T) {
-	expected_value := "Pass"
+	expected_value := "Fail"
 
 	gradeCalculator := NewGradeCalculator()
 
