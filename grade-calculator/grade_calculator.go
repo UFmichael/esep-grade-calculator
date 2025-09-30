@@ -110,5 +110,11 @@ func computeAverage(grades []Grade, gradeType GradeType) int {
 }
 
 func (gc *GradeCalculator) GetPassFail() string {
+	numericalGrade := gc.calculateNumericalGrade()
+
+	if numericalGrade >= 60 {
+		return "Pass"
+	}
+
 	return "Fail"
 }
